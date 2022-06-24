@@ -37,10 +37,12 @@ export class Age {
         this.yrsLeft = parseFloat((78.8 - this.age).toFixed(2));
       }
     }
-    // if (this.yrsLeft < 0) {
-    //   this.yrsOutlive = Math.abs(this.yrsLeft)
-    // }
-    return this.yrsLeft;
+    if (this.yrsLeft < 0) {
+      this.yrsOutlive = Math.abs(this.yrsLeft)
+      return this.yrsOutlive
+    } else {
+      return this.yrsLeft;
+    }
   }
 
   exercise(time) {
