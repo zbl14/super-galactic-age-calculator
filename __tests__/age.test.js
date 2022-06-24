@@ -108,4 +108,9 @@ describe('Age', () => {
     expect(reusableAge.marsYLeft).toEqual(30.37);
     expect(reusableAge.jupiterYLeft).toEqual(4.81);
   })
+
+  test('should return years lived past the life expectancy', ()=> {
+    const longevity = new Age ("Ben", 90, "male", "Asian", "USA")
+    expect(longevity.yrsLeftOnEarth).toEqual(4.7)
+  })
 });
