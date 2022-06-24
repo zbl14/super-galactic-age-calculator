@@ -45,7 +45,8 @@ export class Age {
       this.yrsLeft = parseFloat((this.yrsLeft + 1.8).toFixed(2));
     } else if (time === "60 - 90 mins") {
       this.yrsLeft = parseFloat((this.yrsLeft + 2.5).toFixed(2));
-      console.log(this.yrsLeft);
+    } else if (time === "90 - 150 mins") {
+      this.yrsLeft = parseFloat((this.yrsLeft + 4.5).toFixed(2));
     }
     return this.yrsLeft
   }
