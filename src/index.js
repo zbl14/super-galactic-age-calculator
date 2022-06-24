@@ -5,7 +5,7 @@ import $ from 'jquery';
 import { Age } from '../src/js/age.js';
 
 $(document).ready(() => {
-  $("form#inputtedDate").submit((event) => {
+  $("form#info").submit((event) => {
     event.preventDefault();
     const name = $("#inputtedName").val();
     const ageOnEarth = $("#inputtedAge").val();
@@ -14,6 +14,6 @@ $(document).ready(() => {
     const country = $("#inputtedCountry").val();
     const time = $("#inputtedExerciseTime").val();
     let age = new Age(name, ageOnEarth, gender, race, country);
-    age;
+    age, time;
   });
 });

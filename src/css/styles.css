@@ -4,3 +4,13 @@
   background-color: var(--bs-light);
   border-radius: .3rem;  
 }
+
+#info {
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.center {
+  position: relative;
+}

@@ -7,51 +7,85 @@
   <div class="jumbotron" >
     <h1>Super Galactic Age Calculator</h1>
   </div>
-  <div>
-    <form id="inputtedName">
-      <div class="form-group">
-        <input id="inputtedName" class="form-control" type="text" placeholder="Enter your name here">
+  <form id="info">
+    <div class="form-group">
+      <input id="inputtedName" class="form-control" type="text" placeholder="Enter your name here">
+    </div>
+    <br>
+    <div class="form-group">
+      <input id="inputtedAge" class="form-control" type="text" placeholder="Enter your age here">
+    </div>
+    <br>
+    <select class="form-control" id="inputtedGendar">
+      <option selected hidden>Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      </optgroup>
+    </select>
+    <br>
+    <select class="form-control" id="inputtedRace">
+      <option selected hidden>Race</option>
+      <option>Asian</option>
+      <option>Hispanic</option>
+      <option>Non-Hispanic White</option>
+      <option>Non-Hispanic African American</option>
+      </optgroup>
+    </select>
+    <br>
+    <select class="form-control" id="inputtedCountry">
+      <option selected hidden>Where do you live?</option>
+      <option>USA</option>
+      <option>ROW</option>
+      </optgroup>
+    </select>
+    <br>
+    <select class="form-control" id="inputtedExerciseTime">
+      <option selected hidden>How much exercise you have each weak?</option>
+      <option>less than 30 mins</option>
+      <option>30 - 60 mins</option>
+      <option>60 - 90 mins</option>
+      <option>90 - 150 mins</option>
+      </optgroup>
+    </select>
+    <br>
+    <button type="submit" class="btn btn-primary center">Submit</button>
+  </form>
+  <br>
+  <div class="row justify-content-center">
+    <div class="card col-4" style="width: 16rem;">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Mercury</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" class="btn btn-primary">Explore Mercury</a>
       </div>
-      <br>
-      <div class="form-group">
-        <input id="inputtedAge" class="form-control" type="text" placeholder="Enter your age here">
+    </div>
+    <div class="card col-4" style="width: 16rem;">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Venus</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="https://en.wikipedia.org/wiki/Venus" class="btn btn-primary">Explore Venus</a>
       </div>
-      <br>
-      <select class="form-control" id="inputtedGendar">
-        <option selected hidden>Gender</option>
-        <option>Male</option>
-        <option>Female</option>
-        </optgroup>
-      </select>
-      <br>
-      <select class="form-control" id="inputtedRace">
-        <option selected hidden>Race</option>
-        <option>Asian</option>
-        <option>Hispanic</option>
-        <option>Non-Hispanic White</option>
-        <option>Non-Hispanic African American</option>
-        </optgroup>
-      </select>
-      <br>
-      <select class="form-control" id="inputtedCountry">
-        <option selected hidden>Where do you live?</option>
-        <option>USA</option>
-        <option>ROW</option>
-        </optgroup>
-      </select>
-      <br>
-      <select class="form-control" id="inputtedExerciseTime">
-        <option selected hidden>How much exercise you have each weak?</option>
-        <option>less than 30 mins</option>
-        <option>30 - 60 mins</option>
-        <option>60 - 90 mins</option>
-        <option>90 - 150 mins</option>
-        </optgroup>
-      </select>
-      <br>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
+    <div class="card col-4" style="width: 16rem;">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Mars</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="https://en.wikipedia.org/wiki/Mars" class="btn btn-primary">Explore Mars</a>
+      </div>
+    </div>
+    <div class="card col-4" style="width: 16rem;">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Jupiter</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="https://en.wikipedia.org/wiki/Jupiter" class="btn btn-primary">Explore Jupiter</a>
+      </div>
+    </div>
   </div>
+
   <div id="conclusion">
     <ul id="result"></ul>
   </div>
