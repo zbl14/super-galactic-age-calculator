@@ -12,6 +12,11 @@ export class Age {
     this.venusY = parseFloat((this.age / 0.62).toFixed(2));
     this.marsY = parseFloat((this.age / 1.88).toFixed(2));
     this.jupiterY = parseFloat((this.age / 11.86).toFixed(2));
-    return this.mercuryY
+    return this.mercuryY, this.venusY, this.marsY, this.jupiterY;
+  }
+
+  yrsleftOnEarth () {
+    
+
   }
 }

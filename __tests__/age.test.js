@@ -31,5 +31,7 @@ describe('Age', () => {
     expect(reusableAge.jupiterY).toEqual(2.53)
   }); 
 
-
+  test('should return years left on Earth based on current age, gender, race and country of residence', () => {
+    expect(reusableAge.yrsleftOnEarth()).toEqual(55.3)
+  }); 
 });
