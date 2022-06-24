@@ -58,7 +58,6 @@ export class Age {
 
   yrsLeftOnOtherPlanets(time) {
     this.yrsLeftOnEarth();
-    console.log(this.yrsLeft)
     this.exercise(time);
     this.mercuryYLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));
     this.venusYLeft = parseFloat((this.yrsLeft / 0.62).toFixed(2));
