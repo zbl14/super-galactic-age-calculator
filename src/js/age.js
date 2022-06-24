@@ -40,4 +40,11 @@ export class Age {
     }
     return yrsleft;
   }
+
+  exercise (time) {
+    // if (time = "30 - 60 mins") {
+    //   this.yrsleft += 1.8
+    // }
+    // return this.yrsleft
+  }
 }

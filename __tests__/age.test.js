@@ -74,4 +74,9 @@ describe('Age', () => {
     const someoneNotInUSA = new Age("A", 30, "female", "Non-Hispanic White", "ROW");
     expect(someoneNotInUSA.yrsleftOnEarth()).toEqual(42.74);
   }); 
+
+  test('should add 1.8 years if excerise at least 30 mins each week', () => {
+    reusableAge.yrsleftOnEarth();
+    expect(reusableAge.exercise()).toEqual(57.1);
+  });
 });
