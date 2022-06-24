@@ -6,4 +6,8 @@ export class Age {
     this.race = race;
     this.country = country;
   }
+
+  galacticAge () {
+    
+  }
 }

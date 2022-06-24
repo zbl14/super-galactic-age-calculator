@@ -10,4 +10,10 @@ describe('Age', () => {
     expect(age.race).toEqual("Asian");
     expect(age.country).toEqual("USA");
   })
+
+  test('should retune age in Mercury years', () => {
+    const age = new Age("Ben", 30, "male", "Asian", "USA")
+    galacticAge(); 
+    expect(age.mercuryY).toEqual(7.2)
+  }); 
 });
