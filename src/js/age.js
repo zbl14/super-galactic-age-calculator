@@ -19,6 +19,20 @@ export class Age {
     let yrsleft;
     if (this.gender === "male" && this.race === "Asian" && this.country === "USA") {
       yrsleft = 85.3 - this.age;
+    } else if (this.gender === "female" && this.race === "Asian" && this.country === "USA") {
+      yrsleft = 89.7 - this.age;
+    } else if (this.gender === "male" && this.race === "Hispanic" && this.country === "USA") {
+      yrsleft = 81.1 - this.age;
+    } else if (this.gender === "female" && this.race === "Hispanic" && this.country === "USA") {
+      yrsleft = 86.3 - this.age;
+    } else if (this.gender === "male" && this.race === "Non-Hispanic White" && this.country === "USA") {
+      yrsleft = 76.5 - this.age;
+    } else if (this.gender === "female" && this.race === "Non-Hispanic White" && this.country === "USA") {
+      yrsleft = 81.2 - this.age;
+    } else if (this.gender === "male" && this.race === "Non-Hispanic African American" && this.country === "USA") {
+      yrsleft = 72.3 - this.age;
+    } else if (this.gender === "female" && this.race === "Non-Hispanic African American" && this.country === "USA") {
+      yrsleft = 78.8 - this.age;
     }
     return yrsleft;
   }

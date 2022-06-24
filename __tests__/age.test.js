@@ -34,4 +34,14 @@ describe('Age', () => {
   test('should return years left on Earth based on current age, gender, race and country of residence', () => {
     expect(reusableAge.yrsleftOnEarth()).toEqual(55.3)
   }); 
+
+  test('should return 59.7 for a 30-years-old asian female who lives in the US', () => {
+    const asianFemale = new Age("A", 30, "female", "Asian", "USA");
+    expect(asianFemale.yrsleftOnEarth()).toEqual(59.7);
+  }); 
+
+  test('should return 51.1 for a 30-years-old Hispanic male who lives in the US', () => {
+    const asianFemale = new Age("A", 30, "male", "Hispanic", "USA");
+    expect(asianFemale.yrsleftOnEarth()).toEqual(51.1);
+  }); 
 });
