@@ -92,4 +92,10 @@ describe('Age', () => {
     let time = "90 - 150 mins";
     expect(reusableAge.exercise(time)).toEqual(59.8);
   });
+
+  test('should not adujst years if excerise time less than 30 mins each week', () => {
+    reusableAge.yrsLeftOnEarth();
+    let time = "less than 30 mins";
+    expect(reusableAge.exercise(time)).toEqual(55.3);
+  });
 });
