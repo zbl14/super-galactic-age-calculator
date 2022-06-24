@@ -13,7 +13,7 @@ describe('Age', () => {
 
   test('should retune age in Mercury years', () => {
     const age = new Age("Ben", 30, "male", "Asian", "USA")
-    galacticAge(); 
+    age.galacticAge(); 
     expect(age.mercuryY).toEqual(7.2)
   }); 
 });
