@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <title>Super Galactic Age Calculator</title>
 </head>
-<body>
-  
+<body class="container">
+  <div class="jumbotron" >
+    <h1>Super Galactic Age Calculator</h1>
+  </div>
+  <div>
+    <form id="inputtedName">
+      <div class="form-group">
+        <input id="inputtedName" class="form-control" type="text" placeholder="Enter your name here">
+      </div>
+      <br>
+      <div class="form-group">
+        <input id="inputtedAge" class="form-control" type="text" placeholder="Enter your age here">
+      </div>
+      <br>
+      <select class="form-control" id="inputtedGendar">
+        <option selected hidden>Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        </optgroup>
+      </select>
+      <br>
+      <select class="form-control" id="inputtedRace">
+        <option selected hidden>Race</option>
+        <option>Asian</option>
+        <option>Hispanic</option>
+        <option>Non-Hispanic White</option>
+        <option>Non-Hispanic African American</option>
+        </optgroup>
+      </select>
+      <br>
+      <select class="form-control" id="inputtedCountry">
+        <option selected hidden>Where do you live?</option>
+        <option>USA</option>
+        <option>ROW</option>
+        </optgroup>
+      </select>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <div id="conclusion">
+    <ul id="result"></ul>
+  </div>
 </body>
 </html>
