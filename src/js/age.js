@@ -16,7 +16,10 @@ export class Age {
   }
 
   yrsleftOnEarth () {
-    
-
+    let yrsleft;
+    if (this.gender === "male" && this.race === "Asian" && this.country === "USA") {
+      yrsleft = 85.3 - this.age;
+    }
+    return yrsleft;
   }
 }
