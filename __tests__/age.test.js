@@ -41,32 +41,37 @@ describe('Age', () => {
   }); 
 
   test('should return 51.1 for a 30-years-old Hispanic male who lives in the US', () => {
-    const asianFemale = new Age("A", 30, "male", "Hispanic", "USA");
-    expect(asianFemale.yrsleftOnEarth()).toEqual(51.1);
+    const hispanicMale = new Age("A", 30, "male", "Hispanic", "USA");
+    expect(hispanicMale.yrsleftOnEarth()).toEqual(51.1);
   }); 
 
   test('should return 56.3 for a 30-years-old Hispanic female who lives in the US', () => {
-    const asianFemale = new Age("A", 30, "female", "Hispanic", "USA");
-    expect(asianFemale.yrsleftOnEarth()).toEqual(56.3);
+    const hispanicFemale = new Age("A", 30, "female", "Hispanic", "USA");
+    expect(hispanicFemale.yrsleftOnEarth()).toEqual(56.3);
   }); 
 
   test('should return 46.5 for a 30-years-old Non-Hispanic White male who lives in the US', () => {
-    const asianFemale = new Age("A", 30, "male", "Non-Hispanic White", "USA");
-    expect(asianFemale.yrsleftOnEarth()).toEqual(46.5);
+    const nonhisWhiteMale = new Age("A", 30, "male", "Non-Hispanic White", "USA");
+    expect(nonhisWhiteMale.yrsleftOnEarth()).toEqual(46.5);
   }); 
 
   test('should return 51.2 for a 30-years-old Non-Hispanic White female who lives in the US', () => {
-    const asianFemale = new Age("A", 30, "female", "Non-Hispanic White", "USA");
-    expect(asianFemale.yrsleftOnEarth()).toEqual(51.2);
+    const nonhisWhiteFemale = new Age("A", 30, "female", "Non-Hispanic White", "USA");
+    expect(nonhisWhiteFemale.yrsleftOnEarth()).toEqual(51.2);
   }); 
 
   test('should return 42.3 for a 30-years-old Non-Hispanic African American male who lives in the US', () => {
-    const asianFemale = new Age("A", 30, "male", "Non-Hispanic African American", "USA");
-    expect(asianFemale.yrsleftOnEarth()).toEqual(42.3);
+    const nonhisAAMale = new Age("A", 30, "male", "Non-Hispanic African American", "USA");
+    expect(nonhisAAMale.yrsleftOnEarth()).toEqual(42.3);
   }); 
 
   test('should return 48.8 for a 30-years-old Non-Hispanic African American female who lives in the US', () => {
-    const asianFemale = new Age("A", 30, "female", "Non-Hispanic African American", "USA");
-    expect(asianFemale.yrsleftOnEarth()).toEqual(48.8);
+    const nonhisAAFemale = new Age("A", 30, "female", "Non-Hispanic African American", "USA");
+    expect(nonhisAAFemale.yrsleftOnEarth()).toEqual(48.8);
+  }); 
+
+  test('should return 42.74 for a 30-years-old person who lives out of the US', () => {
+    const someoneNotInUSA = new Age("A", 30, "female", "Non-Hispanic White", "ROW");
+    expect(someoneNotInUSA.yrsleftOnEarth()).toEqual(42.74);
   }); 
 });
