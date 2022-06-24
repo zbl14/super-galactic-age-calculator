@@ -52,6 +52,7 @@ export class Age {
   }
 
   yrsLeftOnOtherPlanets() {
-    // this.mercuryYLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));
+    this.mercuryYLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));
+    return this.mercuryYLeft
   }
 }
