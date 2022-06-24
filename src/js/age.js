@@ -8,6 +8,7 @@ export class Age {
   }
 
   galacticAge () {
-
+    this.mercuryY = parseFloat((this.age * 0.24).toFixed(2));
+    return this.mercuryY
   }
 }
