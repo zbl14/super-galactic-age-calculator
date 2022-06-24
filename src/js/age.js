@@ -38,8 +38,8 @@ export class Age {
       }
     }
     if (this.yrsLeft < 0) {
-      this.yrsLeft = Math.abs(this.yrsLeft)
-      return this.yrsLeft
+      this.yrsLeft = Math.abs(this.yrsLeft);
+      return this.yrsLeft;
     } else {
       return this.yrsLeft;
     }
@@ -53,7 +53,7 @@ export class Age {
     } else if (time === "90 - 150 mins") {
       this.yrsLeft = parseFloat((this.yrsLeft + 4.5).toFixed(2));
     }
-    return this.yrsLeft
+    return this.yrsLeft;
   }
 
   yrsLeftOnOtherPlanets(time) {
@@ -63,6 +63,6 @@ export class Age {
     this.venusYLeft = parseFloat((this.yrsLeft / 0.62).toFixed(2));
     this.marsYLeft = parseFloat((this.yrsLeft / 1.88).toFixed(2));
     this.jupiterYLeft = parseFloat((this.yrsLeft / 11.86).toFixed(2));
-    return this.mercuryYLeft, this.venusYLeft, this.marsYLeft, this.jupiterYLeft
+    return this.mercuryYLeft, this.venusYLeft, this.marsYLeft, this.jupiterYLeft;
   }
 }
