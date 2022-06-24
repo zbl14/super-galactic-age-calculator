@@ -41,9 +41,11 @@ export class Age {
   }
 
   exercise (time) {
-    console.log(this.yrsLeft)
-    if (time = "30 - 60 mins") {
+    if (time === "30 - 60 mins") {
       this.yrsLeft = parseFloat((this.yrsLeft + 1.8).toFixed(2));
+    } else if (time === "60 - 90 mins") {
+      this.yrsLeft = parseFloat((this.yrsLeft + 2.5).toFixed(2));
+      console.log(this.yrsLeft);
     }
     return this.yrsLeft
   }
