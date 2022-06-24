@@ -5,12 +5,17 @@
   border-radius: .3rem;  
 }
 
+h1, h5 {
+  text-align: center;
+}
+
 #info {
   width: 40%;
   display: block;
   margin: auto;
 }
 
-.center {
-  position: relative;
+.buttonCenter {
+  display: block;
+  margin: auto;
 }
