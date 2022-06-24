@@ -110,7 +110,12 @@ describe('Age', () => {
   })
 
   test('should return years lived past the life expectancy', ()=> {
-    const longevity = new Age ("Ben", 90, "male", "Asian", "USA")
-    expect(longevity.yrsLeftOnEarth()).toEqual(4.7)
+    const longevity = new Age ("Ben", 90, "male", "Asian", "USA");
+    expect(longevity.yrsLeftOnEarth()).toEqual(4.7);
+  })
+
+  test('should return years lived past the life expectancy', ()=> {
+    const longevity = new Age ("Ben", 90, "male", "Asian", "ROW");
+    expect(longevity.yrsLeftOnEarth()).toEqual(17.26);
   })
 });
