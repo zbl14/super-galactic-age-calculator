@@ -1,4 +1,4 @@
-import { Age } from '../src/js/date.js';
+import { Age } from '../src/js/age.js';
 
 describe('Age', () => {
   
