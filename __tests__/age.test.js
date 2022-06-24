@@ -20,15 +20,15 @@ describe('Age', () => {
 
   test('should return age in Mercury years', () => {
     reusableAge.galacticAge(); 
-    expect(reusableAge.mercuryY).toEqual(125.00)
+    expect(reusableAge.mercurianYr).toEqual(125.00)
   }); 
 
   test('should return age in Mercury years, Venus years, Mars years and Jupiter years', () => {
     reusableAge.galacticAge(); 
-    expect(reusableAge.mercuryY).toEqual(125.00)
-    expect(reusableAge.venusY).toEqual(48.39)
-    expect(reusableAge.marsY).toEqual(15.96)
-    expect(reusableAge.jupiterY).toEqual(2.53)
+    expect(reusableAge.mercurianYr).toEqual(125.00)
+    expect(reusableAge.venusianYr).toEqual(48.39)
+    expect(reusableAge.martianYr).toEqual(15.96)
+    expect(reusableAge.jovianYr).toEqual(2.53)
   }); 
 
   test('should return years left on Earth based on current age, gender, race and country of residence', () => {
@@ -102,10 +102,10 @@ describe('Age', () => {
   test('should return years left to live on Mercury, Venus, Mars and Jupiter', () => {
     let time = "30 - 60 mins";
     reusableAge.yrsLeftOnOtherPlanets(time);
-    expect(reusableAge.mercuryYLeft).toEqual(237.92);
-    expect(reusableAge.venusYLeft).toEqual(92.10);
-    expect(reusableAge.marsYLeft).toEqual(30.37);
-    expect(reusableAge.jupiterYLeft).toEqual(4.81);
+    expect(reusableAge.mercurianYrLeft).toEqual(237.92);
+    expect(reusableAge.venusianYrLeft).toEqual(92.10);
+    expect(reusableAge.martianYrLeft).toEqual(30.37);
+    expect(reusableAge.jovianYrLeft).toEqual(4.81);
   })
 
   test('should return years lived past the life expectancy', ()=> {
@@ -123,9 +123,9 @@ describe('Age', () => {
     let time = "30 - 60 mins";
     console.log(longevity.yrsLeftOnEarth());
     longevity.yrsLeftOnOtherPlanets(time);
-    expect(longevity.mercuryYLeft).toEqual(27.08);
-    expect(longevity.venusYLeft).toEqual(10.48);
-    expect(longevity.marsYLeft).toEqual(3.46);
-    expect(longevity.jupiterYLeft).toEqual(0.55);
+    expect(longevity.mercurianYrLeft).toEqual(27.08);
+    expect(longevity.venusianYrLeft).toEqual(10.48);
+    expect(longevity.martianYrLeft).toEqual(3.46);
+    expect(longevity.jovianYrLeft).toEqual(0.55);
   })
 });

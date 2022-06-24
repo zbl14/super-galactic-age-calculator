@@ -18,7 +18,7 @@ $(document).ready(() => {
     $("#earthY").html(age.age);
     $("#mercurianYr").html(age.mercurianYr);
     $("#venusianYr").html(age.venusianYr);
-    $("#martianYr").html(age.venusianYr);
+    $("#martianYr").html(age.martianYr);
     $("#jovianYr").html(age.jovianYr);
     time;
   });
