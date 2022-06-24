@@ -1,5 +1,5 @@
 export class Age {
-  constructor (name, age, gender, race, country) {
+  constructor(name, age, gender, race, country) {
     this.name = name;
     this.age = age;
     this.gender = gender;
@@ -7,7 +7,7 @@ export class Age {
     this.country = country;
   }
 
-  galacticAge () {
+  galacticAge() {
     this.mercuryY = parseFloat((this.age / 0.24).toFixed(2));
     this.venusY = parseFloat((this.age / 0.62).toFixed(2));
     this.marsY = parseFloat((this.age / 1.88).toFixed(2));
@@ -15,7 +15,7 @@ export class Age {
     return this.mercuryY, this.venusY, this.marsY, this.jupiterY;
   }
 
-  yrsLeftOnEarth () {
+  yrsLeftOnEarth() {
     if (this.country !== "USA") {
       this.yrsLeft = parseFloat((72.74 - this.age).toFixed(2));
     } else {
@@ -40,7 +40,7 @@ export class Age {
     return this.yrsLeft;
   }
 
-  exercise (time) {
+  exercise(time) {
     if (time === "30 - 60 mins") {
       this.yrsLeft = parseFloat((this.yrsLeft + 1.8).toFixed(2));
     } else if (time === "60 - 90 mins") {
@@ -49,5 +49,9 @@ export class Age {
       this.yrsLeft = parseFloat((this.yrsLeft + 4.5).toFixed(2));
     }
     return this.yrsLeft
+  }
+
+  yrsLeftOnOtherPlanets() {
+    // this.mercuryYLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));
   }
 }
