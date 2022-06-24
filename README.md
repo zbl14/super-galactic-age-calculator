@@ -1,31 +1,36 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### An age calculator take a person's age in years and returns his/her age in other planet years
 
-#### By (Your Name Here)
+#### By Zhibin Liang
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* JavaScript
+* HTML
+* CSS
+* Webpack
+* Jest
+* ESLint
 
 ## Description
+The Super Galactic Age Calculator can tell your age in Mercury years, Veus years, Mars years and Jupiter years. The life expectancy is based on the data derived from the National Vital Statistics System (2015 version) and adjusted by users' weekly excercise time.  
 
 ## Setup/Installation Requirements
-
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+1. Clone the repo
+```sh
+https://github.com/zbl14/super-galactic-age-calculator.git
+```
+2. Open index.html which is under super-galactic-age-calculator/src
+3. Enter your info and click the submit button 
 
 ## Known Bugs
-
-* _Any known issues_
-* _should go here_
+* NA
 
 ## License
+MIT
 
 ## Contact Information
+Zhibin Liang <ifthereisoneday@gmail.com>
+
+Copyright &copy; 2022 Zhibin Liang
