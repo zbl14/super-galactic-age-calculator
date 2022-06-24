@@ -32,51 +32,52 @@ describe('Age', () => {
   }); 
 
   test('should return years left on Earth based on current age, gender, race and country of residence', () => {
-    expect(reusableAge.yrsleftOnEarth()).toEqual(55.3)
+    expect(reusableAge.yrsLeftOnEarth()).toEqual(55.3)
   }); 
 
   test('should return 59.7 for a 30-years-old asian female who lives in the US', () => {
     const asianFemale = new Age("A", 30, "female", "Asian", "USA");
-    expect(asianFemale.yrsleftOnEarth()).toEqual(59.7);
+    expect(asianFemale.yrsLeftOnEarth()).toEqual(59.7);
   }); 
 
   test('should return 51.1 for a 30-years-old Hispanic male who lives in the US', () => {
     const hispanicMale = new Age("A", 30, "male", "Hispanic", "USA");
-    expect(hispanicMale.yrsleftOnEarth()).toEqual(51.1);
+    expect(hispanicMale.yrsLeftOnEarth()).toEqual(51.1);
   }); 
 
   test('should return 56.3 for a 30-years-old Hispanic female who lives in the US', () => {
     const hispanicFemale = new Age("A", 30, "female", "Hispanic", "USA");
-    expect(hispanicFemale.yrsleftOnEarth()).toEqual(56.3);
+    expect(hispanicFemale.yrsLeftOnEarth()).toEqual(56.3);
   }); 
 
   test('should return 46.5 for a 30-years-old Non-Hispanic White male who lives in the US', () => {
     const nonhisWhiteMale = new Age("A", 30, "male", "Non-Hispanic White", "USA");
-    expect(nonhisWhiteMale.yrsleftOnEarth()).toEqual(46.5);
+    expect(nonhisWhiteMale.yrsLeftOnEarth()).toEqual(46.5);
   }); 
 
   test('should return 51.2 for a 30-years-old Non-Hispanic White female who lives in the US', () => {
     const nonhisWhiteFemale = new Age("A", 30, "female", "Non-Hispanic White", "USA");
-    expect(nonhisWhiteFemale.yrsleftOnEarth()).toEqual(51.2);
+    expect(nonhisWhiteFemale.yrsLeftOnEarth()).toEqual(51.2);
   }); 
 
   test('should return 42.3 for a 30-years-old Non-Hispanic African American male who lives in the US', () => {
     const nonhisAAMale = new Age("A", 30, "male", "Non-Hispanic African American", "USA");
-    expect(nonhisAAMale.yrsleftOnEarth()).toEqual(42.3);
+    expect(nonhisAAMale.yrsLeftOnEarth()).toEqual(42.3);
   }); 
 
   test('should return 48.8 for a 30-years-old Non-Hispanic African American female who lives in the US', () => {
     const nonhisAAFemale = new Age("A", 30, "female", "Non-Hispanic African American", "USA");
-    expect(nonhisAAFemale.yrsleftOnEarth()).toEqual(48.8);
+    expect(nonhisAAFemale.yrsLeftOnEarth()).toEqual(48.8);
   }); 
 
   test('should return 42.74 for a 30-years-old person who lives out of the US', () => {
     const someoneNotInUSA = new Age("A", 30, "female", "Non-Hispanic White", "ROW");
-    expect(someoneNotInUSA.yrsleftOnEarth()).toEqual(42.74);
+    expect(someoneNotInUSA.yrsLeftOnEarth()).toEqual(42.74);
   }); 
 
   test('should add 1.8 years if excerise at least 30 mins each week', () => {
-    reusableAge.yrsleftOnEarth();
-    expect(reusableAge.exercise()).toEqual(57.1);
+    reusableAge.yrsLeftOnEarth();
+    let time = "30 - 60 mins";
+    expect(reusableAge.exercise(time)).toEqual(57.1);
   });
 });

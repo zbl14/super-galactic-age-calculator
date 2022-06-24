@@ -15,36 +15,36 @@ export class Age {
     return this.mercuryY, this.venusY, this.marsY, this.jupiterY;
   }
 
-  yrsleftOnEarth () {
-    let yrsleft;
+  yrsLeftOnEarth () {
     if (this.country !== "USA") {
-      yrsleft = parseFloat((72.74 - this.age).toFixed(2));
+      this.yrsLeft = parseFloat((72.74 - this.age).toFixed(2));
     } else {
       if (this.gender === "male" && this.race === "Asian") {
-        yrsleft = parseFloat((85.3 - this.age).toFixed(2));
+        this.yrsLeft = parseFloat((85.3 - this.age).toFixed(2));
       } else if (this.gender === "female" && this.race === "Asian") {
-        yrsleft = parseFloat((89.7 - this.age).toFixed(2));
+        this.yrsLeft = parseFloat((89.7 - this.age).toFixed(2));
       } else if (this.gender === "male" && this.race === "Hispanic") {
-        yrsleft = parseFloat((81.1 - this.age).toFixed(2));
+        this.yrsLeft = parseFloat((81.1 - this.age).toFixed(2));
       } else if (this.gender === "female" && this.race === "Hispanic") {
-        yrsleft = parseFloat((86.3 - this.age).toFixed(2));
+        this.yrsLeft = parseFloat((86.3 - this.age).toFixed(2));
       } else if (this.gender === "male" && this.race === "Non-Hispanic White") {
-        yrsleft = parseFloat((76.5 - this.age).toFixed(2));
+        this.yrsLeft = parseFloat((76.5 - this.age).toFixed(2));
       } else if (this.gender === "female" && this.race === "Non-Hispanic White") {
-        yrsleft = parseFloat((81.2 - this.age).toFixed(2));
+        this.yrsLeft = parseFloat((81.2 - this.age).toFixed(2));
       } else if (this.gender === "male" && this.race === "Non-Hispanic African American") {
-        yrsleft = parseFloat((72.3 - this.age).toFixed(2));
+        this.yrsLeft = parseFloat((72.3 - this.age).toFixed(2));
       } else if (this.gender === "female" && this.race === "Non-Hispanic African American") {
-        yrsleft = parseFloat((78.8 - this.age).toFixed(2));
+        this.yrsLeft = parseFloat((78.8 - this.age).toFixed(2));
       }
     }
-    return yrsleft;
+    return this.yrsLeft;
   }
 
   exercise (time) {
-    // if (time = "30 - 60 mins") {
-    //   this.yrsleft += 1.8
-    // }
-    // return this.yrsleft
+    console.log(this.yrsLeft)
+    if (time = "30 - 60 mins") {
+      this.yrsLeft = parseFloat((this.yrsLeft + 1.8).toFixed(2));
+    }
+    return this.yrsLeft
   }
 }
