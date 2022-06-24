@@ -20,21 +20,21 @@ export class Age {
     if (this.country !== "USA") {
       yrsleft = parseFloat((72.74 - this.age).toFixed(2));
     } else {
-      if (this.gender === "male" && this.race === "Asian" && this.country === "USA") {
+      if (this.gender === "male" && this.race === "Asian") {
         yrsleft = parseFloat((85.3 - this.age).toFixed(2));
-      } else if (this.gender === "female" && this.race === "Asian" && this.country === "USA") {
+      } else if (this.gender === "female" && this.race === "Asian") {
         yrsleft = parseFloat((89.7 - this.age).toFixed(2));
-      } else if (this.gender === "male" && this.race === "Hispanic" && this.country === "USA") {
+      } else if (this.gender === "male" && this.race === "Hispanic") {
         yrsleft = parseFloat((81.1 - this.age).toFixed(2));
-      } else if (this.gender === "female" && this.race === "Hispanic" && this.country === "USA") {
+      } else if (this.gender === "female" && this.race === "Hispanic") {
         yrsleft = parseFloat((86.3 - this.age).toFixed(2));
-      } else if (this.gender === "male" && this.race === "Non-Hispanic White" && this.country === "USA") {
+      } else if (this.gender === "male" && this.race === "Non-Hispanic White") {
         yrsleft = parseFloat((76.5 - this.age).toFixed(2));
-      } else if (this.gender === "female" && this.race === "Non-Hispanic White" && this.country === "USA") {
+      } else if (this.gender === "female" && this.race === "Non-Hispanic White") {
         yrsleft = parseFloat((81.2 - this.age).toFixed(2));
-      } else if (this.gender === "male" && this.race === "Non-Hispanic African American" && this.country === "USA") {
+      } else if (this.gender === "male" && this.race === "Non-Hispanic African American") {
         yrsleft = parseFloat((72.3 - this.age).toFixed(2));
-      } else if (this.gender === "female" && this.race === "Non-Hispanic African American" && this.country === "USA") {
+      } else if (this.gender === "female" && this.race === "Non-Hispanic African American") {
         yrsleft = parseFloat((78.8 - this.age).toFixed(2));
       }
     }
