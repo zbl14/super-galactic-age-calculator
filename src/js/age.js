@@ -53,6 +53,9 @@ export class Age {
 
   yrsLeftOnOtherPlanets() {
     this.mercuryYLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));
-    return this.mercuryYLeft
+    this.venusYLeft = parseFloat((this.yrsLeft / 0.62).toFixed(2));
+    this.marsYLeft = parseFloat((this.yrsLeft / 1.88).toFixed(2));
+    this.jupiterYLeft = parseFloat((this.yrsLeft / 11.86).toFixed(2));
+    return this.mercuryYLeft, this.venusYLeft, this.marsYLeft, this.jupiterYLeft
   }
 }

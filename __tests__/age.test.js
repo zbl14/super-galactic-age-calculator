@@ -102,6 +102,10 @@ describe('Age', () => {
   test('should return years left to live on Mercury, Venus, Mars and Jupiter', () => {
     reusableAge.yrsLeftOnEarth();
     reusableAge.exercise("30 - 60 mins");
-    expect(reusableAge.yrsLeftOnOtherPlanets()).toEqual(237.92);
+    reusableAge.yrsLeftOnOtherPlanets();
+    expect(reusableAge.mercuryYLeft).toEqual(237.92);
+    expect(reusableAge.venusYLeft).toEqual(92.10);
+    expect(reusableAge.marsYLeft).toEqual(30.37);
+    expect(reusableAge.jupiterYLeft).toEqual(4.81);
   })
 });
