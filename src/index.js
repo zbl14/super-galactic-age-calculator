@@ -12,7 +12,8 @@ $(document).ready(() => {
     const gender = $("#inputtedGender").val();
     const race = $("#inputtedRace").val();
     const country = $("#inputtedCountry").val();
+    const time = $("#inputtedExerciseTime").val();
     let age = new Age(name, ageOnEarth, gender, race, country);
-    age
+    age;
   });
 });
