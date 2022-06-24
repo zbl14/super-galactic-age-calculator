@@ -100,9 +100,8 @@ describe('Age', () => {
   });
 
   test('should return years left to live on Mercury, Venus, Mars and Jupiter', () => {
-    reusableAge.yrsLeftOnEarth();
-    reusableAge.exercise("30 - 60 mins");
-    reusableAge.yrsLeftOnOtherPlanets();
+    let time = "30 - 60 mins";
+    reusableAge.yrsLeftOnOtherPlanets(time);
     expect(reusableAge.mercuryYLeft).toEqual(237.92);
     expect(reusableAge.venusYLeft).toEqual(92.10);
     expect(reusableAge.marsYLeft).toEqual(30.37);
@@ -117,5 +116,16 @@ describe('Age', () => {
   test('should return years lived past the life expectancy', ()=> {
     const longevity = new Age ("Ben", 90, "male", "Asian", "ROW");
     expect(longevity.yrsLeftOnEarth()).toEqual(17.26);
+  })
+  
+  test('should return outlived years in other planet yrs', ()=> {
+    const longevity = new Age ("Ben", 90, "male", "Asian", "USA");
+    let time = "30 - 60 mins";
+    console.log(longevity.yrsLeftOnEarth());
+    longevity.yrsLeftOnOtherPlanets(time);
+    expect(longevity.mercuryYLeft).toEqual(27.08);
+    expect(longevity.venusYLeft).toEqual(10.48);
+    expect(longevity.marsYLeft).toEqual(3.46);
+    expect(longevity.jupiterYLeft).toEqual(0.55);
   })
 });

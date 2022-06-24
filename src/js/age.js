@@ -38,8 +38,8 @@ export class Age {
       }
     }
     if (this.yrsLeft < 0) {
-      this.yrsOutlive = Math.abs(this.yrsLeft)
-      return this.yrsOutlive
+      this.yrsLeft = Math.abs(this.yrsLeft)
+      return this.yrsLeft
     } else {
       return this.yrsLeft;
     }
@@ -56,7 +56,10 @@ export class Age {
     return this.yrsLeft
   }
 
-  yrsLeftOnOtherPlanets() {
+  yrsLeftOnOtherPlanets(time) {
+    this.yrsLeftOnEarth();
+    console.log(this.yrsLeft)
+    this.exercise(time);
     this.mercuryYLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));
     this.venusYLeft = parseFloat((this.yrsLeft / 0.62).toFixed(2));
     this.marsYLeft = parseFloat((this.yrsLeft / 1.88).toFixed(2));
