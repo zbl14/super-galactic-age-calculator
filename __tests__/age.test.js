@@ -23,5 +23,13 @@ describe('Age', () => {
     expect(reusableAge.mercuryY).toEqual(7.2)
   }); 
 
+  test('should retune age in Mercury years, Venus years, Mars years, Jupiter years', () => {
+    reusableAge.galacticAge(); 
+    expect(reusableAge.mercuryY).toEqual(7.2)
+    expect(reusableAge.venusY).toEqual(18.6)
+    expect(reusableAge.marsY).toEqual(56.4)
+    expect(reusableAge.jupiterY).toEqual(355.8)
+  }); 
+
 
 });
