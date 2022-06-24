@@ -8,11 +8,11 @@ export class Age {
   }
 
   galacticAge() {
-    this.mercuryY = parseFloat((this.age / 0.24).toFixed(2));
-    this.venusY = parseFloat((this.age / 0.62).toFixed(2));
-    this.marsY = parseFloat((this.age / 1.88).toFixed(2));
-    this.jupiterY = parseFloat((this.age / 11.86).toFixed(2));
-    return this.mercuryY, this.venusY, this.marsY, this.jupiterY;
+    this.mercurianYr = parseFloat((this.age / 0.24).toFixed(2));
+    this.venusianYr = parseFloat((this.age / 0.62).toFixed(2));
+    this.martianYr = parseFloat((this.age / 1.88).toFixed(2));
+    this.jovianYr = parseFloat((this.age / 11.86).toFixed(2));
+    return this.mercurianYr, this.venusianYr, this.martianYr, this.jovianYr;
   }
 
   yrsLeftOnEarth() {
@@ -59,10 +59,10 @@ export class Age {
   yrsLeftOnOtherPlanets(time) {
     this.yrsLeftOnEarth();
     this.exercise(time);
-    this.mercuryYLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));
-    this.venusYLeft = parseFloat((this.yrsLeft / 0.62).toFixed(2));
-    this.marsYLeft = parseFloat((this.yrsLeft / 1.88).toFixed(2));
-    this.jupiterYLeft = parseFloat((this.yrsLeft / 11.86).toFixed(2));
-    return this.mercuryYLeft, this.venusYLeft, this.marsYLeft, this.jupiterYLeft;
+    this.mercurianYrLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));
+    this.venusianYrLeft = parseFloat((this.yrsLeft / 0.62).toFixed(2));
+    this.martianYrLeft = parseFloat((this.yrsLeft / 1.88).toFixed(2));
+    this.jovianYrLeft = parseFloat((this.yrsLeft / 11.86).toFixed(2));
+    return this.mercurianYrLeft, this.venusianYrLeft, this.martianYrLeft, this.jovianYrLeft;
   }
 }

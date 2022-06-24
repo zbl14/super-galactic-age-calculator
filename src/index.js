@@ -14,6 +14,12 @@ $(document).ready(() => {
     const country = $("#inputtedCountry").val();
     const time = $("#inputtedExerciseTime").val();
     let age = new Age(name, ageOnEarth, gender, race, country);
-    age, time;
+    age.galacticAge(); 
+    $("#earthY").html(age.age);
+    $("#mercurianYr").html(age.mercurianYr);
+    $("#venusianYr").html(age.venusianYr);
+    $("#martianYr").html(age.venusianYr);
+    $("#jovianYr").html(age.jovianYr);
+    time;
   });
 });
