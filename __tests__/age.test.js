@@ -59,4 +59,9 @@ describe('Age', () => {
     const asianFemale = new Age("A", 30, "female", "Non-Hispanic White", "USA");
     expect(asianFemale.yrsleftOnEarth()).toEqual(51.2);
   }); 
+
+  test('should return 42.3 for a 30-years-old Non-Hispanic African American male who lives in the US', () => {
+    const asianFemale = new Age("A", 30, "male", "Non-Hispanic African American", "USA");
+    expect(asianFemale.yrsleftOnEarth()).toEqual(42.3);
+  }); 
 });
