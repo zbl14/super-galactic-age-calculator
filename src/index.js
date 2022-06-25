@@ -29,11 +29,22 @@ $(document).ready(() => {
       $(".martianYrLeft input").val(age.martianYrLeft);
       $(".jovianYrLeft input").val(age.jovianYrLeft);
     } else {
+      age.yrsLeftOnOtherPlanets();
       $(".yrsLeft").hide();
       $(".mercurianYrLeft").hide();
       $(".venusianYrLeft").hide();
       $(".martianYrLeft").hide();
       $(".jovianYrLeft").hide();
+      $(".yrsOutlive").show()
+      $(".mercurianYrOutlive").show();
+      $(".venusianYrOutlive").show();
+      $(".martianYrOutlive").show();
+      $(".jovianYrOutlive").show();
+      $(".yrsOutlive input").val(age.yrsOutlive);
+      $(".mercurianYrOutlive input").val(age.mercurianYrLeft)
+      $(".venusianYrOutlive input").val(age.venusianYrLeft)
+      $(".martianYrOutlive input").val(age.martianYrLeft)
+      $(".jovianYrOutlive input").val(age.jovianYrLeft)
     }
   });
 });
