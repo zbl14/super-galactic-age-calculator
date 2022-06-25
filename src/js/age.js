@@ -38,8 +38,8 @@ export class Age {
       }
     }
     if (this.yrsLeft < 0) {
-      this.yrsLeft = Math.abs(this.yrsLeft);
-      return this.yrsLeft;
+      this.yrsOutlive = Math.abs(this.yrsLeft);
+      return this.yrsOutlive;
     } else {
       return this.yrsLeft;
     }
@@ -57,6 +57,14 @@ export class Age {
   }
 
   yrsLeftOnOtherPlanets(time) {
+    if (this.yrsOutlive !== undefined) {
+      this.yrsLeftOnEarth();
+      this.mercurianYrLeft = parseFloat((this.yrsOutlive / 0.24).toFixed(2));
+      this.venusianYrLeft = parseFloat((this.yrsOutlive / 0.62).toFixed(2));
+      this.martianYrLeft = parseFloat((this.yrsOutlive / 1.88).toFixed(2));
+      this.jovianYrLeft = parseFloat((this.yrsOutlive / 11.86).toFixed(2));
+      return this.mercurianYrLeft, this.venusianYrLeft, this.martianYrLeft, this.jovianYrLeft;
+    }
     this.yrsLeftOnEarth();
     this.exercise(time);
     this.mercurianYrLeft = parseFloat((this.yrsLeft / 0.24).toFixed(2));

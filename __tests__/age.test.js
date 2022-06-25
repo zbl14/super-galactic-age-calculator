@@ -120,12 +120,11 @@ describe('Age', () => {
   
   test('should return outlived years in other planet yrs', ()=> {
     const longevity = new Age ("Ben", 90, "Male", "Asian", "USA");
-    let time = "30 - 60 mins";
     console.log(longevity.yrsLeftOnEarth());
-    longevity.yrsLeftOnOtherPlanets(time);
-    expect(longevity.mercurianYrLeft).toEqual(27.08);
-    expect(longevity.venusianYrLeft).toEqual(10.48);
-    expect(longevity.martianYrLeft).toEqual(3.46);
-    expect(longevity.jovianYrLeft).toEqual(0.55);
+    longevity.yrsLeftOnOtherPlanets();
+    expect(longevity.mercurianYrLeft).toEqual(19.58);
+    expect(longevity.venusianYrLeft).toEqual(7.58);
+    expect(longevity.martianYrLeft).toEqual(2.5);
+    expect(longevity.jovianYrLeft).toEqual(0.40);
   })
 });
