@@ -6,12 +6,13 @@
 
 ## Technologies Used
 
+* Bootstrap 
+* CSS 
+* HTML 
 * JavaScript
-* HTML
-* CSS
-* Webpack
+* jQuery
 * Jest
-* ESLint
+* Webpack
 
 ## Description
 The Super Galactic Age Calculator can tell your age in Mercury years, Veus years, Mars years and Jupiter years. The life expectancy is based on the data derived from the National Vital Statistics System (2015 version) and adjusted by users' weekly excercise time.  
