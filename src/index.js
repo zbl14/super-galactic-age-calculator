@@ -22,8 +22,8 @@ $(document).ready(() => {
     $("#jovianYr").val(age.jovianYr);
     age.yrsLeftOnEarth();
     console.log(age);
-    // age.exercise(time);
-    console.log(age.yrsLeft);
+    age.exercise(time);
+    age.yrsLeftOnOtherPlanets();
     $("#yrsLeft").val(age.yrsLeft);
     $("#mercurianYrLeft").val(age.mercurianYrLeft);
     $("#venusianYrLeft").val(age.venusianYrLeft);
