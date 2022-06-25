@@ -19,21 +19,21 @@ export class Age {
     if (this.country !== "USA") {
       this.yrsLeft = parseFloat((72.74 - this.age).toFixed(2));
     } else {
-      if (this.gender === "male" && this.race === "Asian") {
+      if (this.gender === "Male" && this.race === "Asian") {
         this.yrsLeft = parseFloat((85.3 - this.age).toFixed(2));
-      } else if (this.gender === "female" && this.race === "Asian") {
+      } else if (this.gender === "Female" && this.race === "Asian") {
         this.yrsLeft = parseFloat((89.7 - this.age).toFixed(2));
-      } else if (this.gender === "male" && this.race === "Hispanic") {
+      } else if (this.gender === "Male" && this.race === "Hispanic") {
         this.yrsLeft = parseFloat((81.1 - this.age).toFixed(2));
-      } else if (this.gender === "female" && this.race === "Hispanic") {
+      } else if (this.gender === "Female" && this.race === "Hispanic") {
         this.yrsLeft = parseFloat((86.3 - this.age).toFixed(2));
-      } else if (this.gender === "male" && this.race === "Non-Hispanic White") {
+      } else if (this.gender === "Male" && this.race === "Non-Hispanic White") {
         this.yrsLeft = parseFloat((76.5 - this.age).toFixed(2));
-      } else if (this.gender === "female" && this.race === "Non-Hispanic White") {
+      } else if (this.gender === "Female" && this.race === "Non-Hispanic White") {
         this.yrsLeft = parseFloat((81.2 - this.age).toFixed(2));
-      } else if (this.gender === "male" && this.race === "Non-Hispanic African American") {
+      } else if (this.gender === "Male" && this.race === "Non-Hispanic African American") {
         this.yrsLeft = parseFloat((72.3 - this.age).toFixed(2));
-      } else if (this.gender === "female" && this.race === "Non-Hispanic African American") {
+      } else if (this.gender === "Female" && this.race === "Non-Hispanic African American") {
         this.yrsLeft = parseFloat((78.8 - this.age).toFixed(2));
       }
     }
