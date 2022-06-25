@@ -20,6 +20,7 @@ h1, h5 {
   margin: auto;
 }
 
-.yrsOutlive {
+.yrsOutlive,.mercurianYrOutlive, .venusianYrOutlive, .martianYrOutlive, .jovianYrOutlive {
   display: none;
 }
+

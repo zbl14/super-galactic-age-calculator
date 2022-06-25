@@ -22,6 +22,16 @@ $(document).ready(() => {
     $("#jovianYr").val(age.jovianYr);
     age.yrsLeftOnEarth();
     if(age.yrsOutlive === undefined) {
+      $(".yrsLeft").show();
+      $(".mercurianYrLeft").show();
+      $(".venusianYrLeft").show();
+      $(".martianYrLeft").show();
+      $(".jovianYrLeft").show();
+      $(".yrsOutlive").hide()
+      $(".mercurianYrOutlive").hide();
+      $(".venusianYrOutlive").hide();
+      $(".martianYrOutlive").hide();
+      $(".jovianYrOutlive").hide();
       age.yrsLeftOnOtherPlanets(time);
       $(".yrsLeft input").val(age.yrsLeft);
       $(".mercurianYrLeft input").val(age.mercurianYrLeft);
