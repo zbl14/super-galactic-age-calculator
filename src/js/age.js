@@ -33,7 +33,7 @@ export class Age {
         this.yrsLeft = parseFloat((81.2 - this.age).toFixed(2));
       } else if (this.gender === "Male" && this.race === "Non-Hispanic African American") {
         this.yrsLeft = parseFloat((72.3 - this.age).toFixed(2));
-      } else if (this.gender === "Female" && this.race === "Non-Hispanic African American") {
+      } else {
         this.yrsLeft = parseFloat((78.8 - this.age).toFixed(2));
       }
     }
