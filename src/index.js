@@ -21,13 +21,19 @@ $(document).ready(() => {
     $("#martianYr").val(age.martianYr);
     $("#jovianYr").val(age.jovianYr);
     age.yrsLeftOnEarth();
-    console.log(age);
-    age.exercise(time);
-    age.yrsLeftOnOtherPlanets();
-    $("#yrsLeft").val(age.yrsLeft);
-    $("#mercurianYrLeft").val(age.mercurianYrLeft);
-    $("#venusianYrLeft").val(age.venusianYrLeft);
-    $("#martianYrLeft").val(age.martianYrLeft);
-    $("#jovianYrLeft").val(age.jovianYrLeft);
+    if(age.yrsOutlive === undefined) {
+      age.yrsLeftOnOtherPlanets(time);
+      $(".yrsLeft input").val(age.yrsLeft);
+      $(".mercurianYrLeft input").val(age.mercurianYrLeft);
+      $(".venusianYrLeft input").val(age.venusianYrLeft);
+      $(".martianYrLeft input").val(age.martianYrLeft);
+      $(".jovianYrLeft input").val(age.jovianYrLeft);
+    } else {
+      $(".yrsLeft").hide();
+      $(".mercurianYrLeft").hide();
+      $(".venusianYrLeft").hide();
+      $(".martianYrLeft").hide();
+      $(".jovianYrLeft").hide();
+    }
   });
 });
