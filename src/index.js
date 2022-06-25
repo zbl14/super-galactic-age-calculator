@@ -27,7 +27,7 @@ $(document).ready(() => {
       $(".venusianYrLeft").show();
       $(".martianYrLeft").show();
       $(".jovianYrLeft").show();
-      $(".yrsOutlive").hide()
+      $(".yrsOutlive").hide();
       $(".mercurianYrOutlive").hide();
       $(".venusianYrOutlive").hide();
       $(".martianYrOutlive").hide();
@@ -45,16 +45,16 @@ $(document).ready(() => {
       $(".venusianYrLeft").hide();
       $(".martianYrLeft").hide();
       $(".jovianYrLeft").hide();
-      $(".yrsOutlive").show()
+      $(".yrsOutlive").show();
       $(".mercurianYrOutlive").show();
       $(".venusianYrOutlive").show();
       $(".martianYrOutlive").show();
       $(".jovianYrOutlive").show();
       $(".yrsOutlive input").val(age.yrsOutlive);
-      $(".mercurianYrOutlive input").val(age.mercurianYrLeft)
-      $(".venusianYrOutlive input").val(age.venusianYrLeft)
-      $(".martianYrOutlive input").val(age.martianYrLeft)
-      $(".jovianYrOutlive input").val(age.jovianYrLeft)
+      $(".mercurianYrOutlive input").val(age.mercurianYrLeft);
+      $(".venusianYrOutlive input").val(age.venusianYrLeft);
+      $(".martianYrOutlive input").val(age.martianYrLeft);
+      $(".jovianYrOutlive input").val(age.jovianYrLeft);
     }
   });
 });
