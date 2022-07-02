@@ -23,8 +23,9 @@ The Super Galactic Age Calculator can tell your age in Mercury years, Veus years
 https://github.com/zbl14/super-galactic-age-calculator.git
 ```
 2. Open terminal, use "cd" command to reach the directory named "super-galactic-age-calculator"
-3. Use "npm run start" command to open the webpage app  
-4. Enter your info and click the submit button 
+3. Use "npm install" command to set up the enviroment
+4. Use "npm run start" command to open the webpage app  
+5. Enter your info and click the submit button 
 
 ## Known Bugs
 * NA
