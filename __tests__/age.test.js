@@ -6,10 +6,6 @@ describe('Age', () => {
     reusableAge = new Age("Ben", 30, "Male", "Asian", "USA")
   }) 
   
-  test('should show how beforeEach() works', () => {
-    console.log(reusableAge);
-  });
-
   test('should return Age object with five properties for name, age, gender, race and country',() => {
     expect(reusableAge.name).toEqual("Ben");
     expect(reusableAge.age).toEqual(30);
